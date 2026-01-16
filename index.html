@@ -1,31 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio Project</title>
-        <body>
-            <h1>DERIN DENNY MATHEW</h1>
-            <h2>I'm a Web Developer</h2>
-            <hr />
-                <a href="./assets/images/movie-ranking (2).png"><bold>Movie Ranking Project</bold></a><br />
-                <h3>The Best Movies According to Derin</h3>
-                <h4>My top 3 movies of all-time.</h4>
-                <hr />
-                <h3>Interstellar</h3>
-                <p>This is my favourite anime. I love the beautiful images.</p>
-                <h3>Ex Machina</h3>
-                <p>Really cool sci-fi movie.</p>
-                <h3>Dark Knight</h3>
-                <p>Super beautiful film. Really artistic.</p>
-                <br />
-                <a href ="./public/birthday-invite.html">Birthday Invite Project</a><br />
-                <img src="./assets/images/birthday-invite.png" height="200" />
-                <hr />
-                <a href ="./public/about.html">About Me</a>
-                <a href ="./public/contact.html">Contact Me</a>
 
-            </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derin Denny Mathew | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        </body>
-    </head>
+<body>
+
+    <header class="container">
+        <h1>DERIN DENNY MATHEW</h1>
+        <h2>I'm a Web Developer</h2>
+        <div class="nav-links">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="./public/contact.html" class="btn btn-outline">Contact Me</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="projects" class="container">
+            <h3 class="section-title">Featured Projects</h3>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="card-content">
+                        <h4 class="card-title">Movie Ranking</h4>
+                        <p class="card-desc">The best movies of all time, curated by me. A showcase of HTML structure
+                            and content organization.</p>
+                        <a href="./assets/images/movie-ranking (2).png" class="btn btn-outline">View Project</a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="card-content">
+                        <h4 class="card-title">Birthday Invite</h4>
+                        <p class="card-desc">An interactive birthday invitation card. Demonstrating layout and image
+                            handling.</p>
+                        <a href="./public/birthday-invite.html" class="btn btn-outline">View Project</a>
+                    </div>
+                </article>
+
+                <!-- Project 3 (Placeholder for future work) -->
+                <article class="project-card">
+                    <div class="card-content">
+                        <h4 class="card-title">Upcoming Project</h4>
+                        <p class="card-desc">Currently working on something exciting using Python and Web technologies.
+                        </p>
+                        <span class="btn-outline" style="opacity: 0.5; cursor: default;">Coming Soon</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="container" style="text-align: center; margin-bottom: 5rem;">
+            <h3 class="section-title">About Me</h3>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">
+                I am a passionate web developer focused on building clean, accessible, and performant web applications.
+                I love turning complex problems into beautiful, simple interface designs.
+            </p>
+            <div class="nav-links">
+                <a href="./public/about.html" class="btn">Read More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        style="text-align: center; padding: 2rem; color: var(--text-secondary); border-top: 1px solid var(--border-color);">
+        <p>&copy; 2026 Derin Denny Mathew. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
